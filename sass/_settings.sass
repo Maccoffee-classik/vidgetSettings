@@ -1,0 +1,34 @@
+@import 'colors'
+*
+
+	margin: 0
+	padding: 0
+	@media (max-width: 576px)
+		::-webkit-scrollbar
+			background-color: #999999
+			margin-bottom: 10px
+		::-webkit-scrollbar-thumb
+			background-color: #D45B78
+			border-radius: 41px
+			margin-bottom: 10px
+
+body
+	font-family: Roboto
+	color: $text-b
+
+.container
+	width: 80vw
+	padding-top: 0
+	max-width: 80vw
+	padding-right: 0
+	padding-left: 0
+	@media (max-width: 992px)
+		width: 89.744vw
+.payment-button
+	color: $text-w
+	cursor: pointer
+	border-radius: 0 5px 5px 0
+	align-items: center
+	text-align: center
+	font-size: 	1.7vh
+	font-weight: 700
