@@ -361,6 +361,140 @@
 
 
 					</div>
+					<table class="table table-responsive">
+						<thead>
+							<tr>
+
+								<th class="col-site-title" scope="col">Дни недели</th>
+								<th class="col-status-title" scope="col">График</th>
+								<th class="col-settings-title" scope="col">
+									Настройка времени работы
+								</th>
+
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+
+
+								<td class="col-site">
+									<div>
+										<input type="checkbox" id="mon" name="mon" checked>
+										<label for="mon">Понедельник</label>
+									</div>
+									<div>
+										<input type="checkbox" id="tue" name="tue" checked>
+										<label for="tue">Вторник</label>
+									</div>
+									<div>
+										<input type="checkbox" id="wed" name="wed" checked>
+										<label for="wed">Среда</label>
+									</div>
+									<div>
+										<input type="checkbox" id="thu" name="thu" checked>
+										<label for="thu">Четверг</label>
+									</div>
+									<div>
+										<input type="checkbox" id="fri" name="fri" checked>
+										<label for="fri">Пятница</label>
+									</div>
+
+
+								</td>
+								<td class="col-status">
+
+									<button class="btn-week-status">Пн</button>
+									<button class="btn-week-status">Вт</button>
+									<button class="btn-week-status">Ср</button>
+									<button class="btn-week-status">Чт</button>
+									<button class="btn-week-status">Пт</button>
+									<div class="time-status"> с 07:15 по 21:15</div>
+								</td>
+								<td class="col-range">
+									<input class="input-range" type="range" name="a" list="a-values" min="0" max="100" step="1"
+										value="50">
+									<datalist id="a-values">
+										<option class="active-label-left" value="10" label="07:15"></option>
+										<option value="90" label="&nbsp"></option>
+										<option value="10" label="&nbsp"></option>
+										<option class="active-label-right" value="90" label="21:15"></option>
+										<option value="10" label="&nbsp"></option>
+										<option value="90" label=""></option>
+									</datalist>
+								</td>
+
+
+							</tr>
+							<tr>
+
+
+								<td>
+									<div>
+										<input type="checkbox" id="sat" name="sat" checked>
+										<label for="sat">Субота</label>
+									</div>
+
+								</td>
+								<td>
+									<div class="time-status">
+
+										с 08:15 по 21:15</div>
+
+								</td>
+								<td class="input-range-col">
+									<input class="input-range" type="range" name="a" list="a-values" min="0" max="100" step="1"
+										value="50">
+									<datalist id="a-values">
+										<option class="active-label-left" value="10" label="07:15"></option>
+										<option value="90" label="&nbsp"></option>
+										<option value="10" label="&nbsp"></option>
+										<option class="active-label-right" value="90" label="21:15"></option>
+										<option value="10" label="&nbsp"></option>
+										<option value="90" label=""></option>
+									</datalist>
+
+								</td>
+
+
+							</tr>
+							<tr>
+
+
+								<td>
+									<div>
+										<input type="checkbox" id="sun" name="sun" checked>
+										<label for="sun">Воскресенье</label>
+									</div>
+
+								</td>
+								<td>
+									<div class="time-status">
+
+										с 08:15 по 21:15</div>
+
+								</td>
+
+
+								<td class="input-range-col">
+									<input class="input-range" type="range" name="a" list="a-values" min="0" max="100" step="1"
+										value="50">
+									<datalist id="a-values">
+										<option class="active-label-left" value="10" label="07:15"></option>
+										<option value="90" label="&nbsp"></option>
+										<option value="10" label="&nbsp"></option>
+										<option class="active-label-right" value="90" label="21:15"></option>
+										<option value="10" label="&nbsp"></option>
+										<option value="90" label=""></option>
+									</datalist>
+
+								</td>
+
+
+							</tr>
+
+						</tbody>
+					</table>
 
 
 
@@ -659,7 +793,7 @@
 						<div class="row slim mb-5">
 							<div class="col-3 "> </div>
 							<div class=" col-9 tab-vidget-behavior__right-col d-flex ">
-								<svg class="question" width="23" height="27" viewBox="0 0 23 27" fill="none"
+								<svg class="question " width="23" height="27" viewBox="0 0 23 27" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<circle cx="11.5" cy="13.5" r="11.5" fill="#4B4B4B" />
 									<path
@@ -770,6 +904,41 @@
 
 							</div>
 						</div>
+						<div class="call-menager  row slim">
+							<div class="col-3">
+								<div class=" text-right graph__title call-menager__title"> Как роботу програмировать название
+									сайта в приветствии</div>
+							</div>
+							<div class="col-9  call-menager__right-col">
+								<input type="text" class="form-control" placeholder="tehnix.su" aria-label="Recipient's username"
+									aria-describedby="basic-addon2">
+								<svg class="question align-top" width="23" height="27" viewBox="0 0 23 27" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<circle cx="11.5" cy="13.5" r="11.5" fill="#4B4B4B" />
+									<path
+										d="M10.0762 16.2383C10.0762 15.459 10.1729 14.8379 10.3662 14.375C10.5596 13.9121 10.9404 13.4053 11.5088 12.8545C12.083 12.2979 12.4463 11.9023 12.5986 11.668C12.833 11.3105 12.9502 10.9238 12.9502 10.5078C12.9502 9.95703 12.8125 9.53809 12.5371 9.25098C12.2676 8.95801 11.8691 8.81152 11.3418 8.81152C10.8379 8.81152 10.4307 8.95508 10.1201 9.24219C9.81543 9.52344 9.66309 9.90723 9.66309 10.3936H7.52734C7.53906 9.35645 7.89062 8.53613 8.58203 7.93262C9.2793 7.3291 10.1992 7.02734 11.3418 7.02734C12.5195 7.02734 13.4365 7.32617 14.0928 7.92383C14.7549 8.52148 15.0859 9.35645 15.0859 10.4287C15.0859 11.3838 14.6406 12.3242 13.75 13.25L12.6689 14.3135C12.2822 14.7529 12.083 15.3945 12.0713 16.2383H10.0762ZM9.92676 18.9717C9.92676 18.626 10.0352 18.3477 10.252 18.1367C10.4688 17.9199 10.7617 17.8115 11.1309 17.8115C11.5059 17.8115 11.8018 17.9229 12.0186 18.1455C12.2354 18.3623 12.3438 18.6377 12.3438 18.9717C12.3438 19.2939 12.2383 19.5635 12.0273 19.7803C11.8164 19.9971 11.5176 20.1055 11.1309 20.1055C10.7441 20.1055 10.4453 19.9971 10.2344 19.7803C10.0293 19.5635 9.92676 19.2939 9.92676 18.9717Z"
+										fill="#EEEEEE" />
+								</svg>
+								<p> Напишите как робот должен называть ваш сайт когда менеджер поднимает трубку. Можно писать на
+									русском.
+									По умолчанию используеться адрес сайта.</p>
+							</div>
+						</div>
+						<div class="row slim  mb-5">
+							<div class="col-3"></div>
+							<div class="col-4">
+								<button class="call-menager__button ">
+
+
+
+									Сохранить</button>
+							</div>
+						</div>
+
+
+
+
+
 					</div>
 
 
@@ -779,10 +948,62 @@
 
 
 				</div>
+				<div id="menu4" class="tab-pane fade"><br>
+					<div class="tab-vidget tab-cod-vidget">
+						<div class="tab-vidget__title">Код виджета для установки на сайт</div>
+						<div class="cod-vidget align-items-center row slim">
+							<div class="col-12">
+								<div class="  graph__title cod-vidget__title">
+									<pre>Код должен быть на каждой странице вашего сайта tehnix.su перед тегом < /body>. </pre>
+								</div>
+							</div>
 
+						</div>
+						<div class="align-items-center row slim">
+							<div class="col-12 cod-vidget__pink">
+								<div class="cod-vidget__text">
+									Данный код только для сайта tehnix.su. Для установки виджета на другой сайт - добавте новый виджет.
+								</div>
+							</div>
 
+						</div>
+						<div class="align-items-center row slim">
+							<div class="col-12 ">
+								<div class="cod-vidget__cod">
+									<pre><span><</span>!-- Begin LeadBack code {literal} -->
+<span><</span>script>
+         <span>var</span> <span>_emv = _emv || [];</span>
+         _emv[ ‘campaign’] = ‘89a91ae5c10525b894c3789d’;
 
+         (function()  {
+                  var em = document.createElement(‘script’); em.type = ‘text/javascript’; em.async = true;
+                  var em = document.createElement(‘script’); em.type = ‘text/javascript’; em.async = true;
+                  var em = document.createElement(‘script’); em.type = ‘text/javascript’; em.async = true;
+         })();
+<span><</span>/script>
+<span><</span>!-- End LeadBack code {/literal} -->
+	</pre>
 
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row slim  mb-5">
+
+							<div class="col-12 ">
+								<button class="cod-vidget__button d-flex">
+									<svg class="cod-vidget__ico" width=" 26" height="26" viewBox="0 0 26 26" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M22.9167 0.25H3.08333C1.525 0.25 0.25 1.525 0.25 3.08333V22.9167C0.25 24.475 1.525 25.75 3.08333 25.75H22.9167C24.475 25.75 25.75 24.475 25.75 22.9167V3.08333C25.75 1.525 24.475 0.25 22.9167 0.25ZM15.8333 20.0833H5.91667V17.25H15.8333V20.0833ZM20.0833 14.4167H5.91667V11.5833H20.0833V14.4167ZM20.0833 8.75H5.91667V5.91667H20.0833V8.75Z"
+											fill="white" />
+									</svg>
+									Скопировать код в буфер</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 
@@ -806,6 +1027,8 @@
 			});
 		});
 	</script>
+
+
 </body>
 
 </html>
