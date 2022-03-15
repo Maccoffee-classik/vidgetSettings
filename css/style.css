@@ -804,18 +804,18 @@ input:checked + .slider:before {
 
 .tab-vidget__text {
   margin-top: 8.2vh;
-  font-size: 1.667vh;
+  font-size: 1.997vh;
   font-weight: 500;
   margin-bottom: 9vh;
-  max-width: 13.802vw;
+  max-width: 15.802vw;
 }
 
 .tab-vidget__text2 {
   margin-top: 20px;
-  font-size: 1.667vh;
+  font-size: 1.997vh;
   font-weight: 500;
   margin-bottom: 7vh;
-  max-width: 13.802vw;
+  max-width: 15.802vw;
 }
 
 .tab-vidget__btn-group {
@@ -832,7 +832,7 @@ input:checked + .slider:before {
   border-radius: 5px;
   font-size: 2.222vh;
   font-weight: 700;
-  margin-left: 1.042vw;
+  margin-left: 2.042vw;
 }
 
 .tab-vidget__image {
