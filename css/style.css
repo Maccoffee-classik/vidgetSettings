@@ -175,13 +175,17 @@ body {
 }
 
 /*dвиджет добавл*/
+.vidget-up-title__text-block {
+  max-width: 12.979vw;
+}
+
 .vidget-up-title__title {
   font-size: 36px;
   font-weight: 700;
 }
 
 .vidget-up-title__text {
-  font-size: 24px;
+  font-size: 2.222vh;
   font-weight: 700;
 }
 
@@ -552,6 +556,10 @@ input:checked + .slider:before {
   box-shadow: 0 0 0 0;
 }
 
+.input-group-block {
+  max-width: 23.375vw;
+}
+
 .input-group {
   max-width: 450px;
 }
@@ -778,10 +786,6 @@ input:checked + .slider:before {
 }
 
 /*2й таб*/
-.tab-vidget {
-  /*3 таб*/
-}
-
 .tab-vidget__title {
   font-weight: 700;
   font-size: 3.3vh;
@@ -799,17 +803,19 @@ input:checked + .slider:before {
 }
 
 .tab-vidget__text {
-  margin-top: 6.2vh;
-  font-size: 18px;
+  margin-top: 8.2vh;
+  font-size: 1.667vh;
   font-weight: 500;
-  margin-bottom: 7vh;
+  margin-bottom: 9vh;
+  max-width: 13.802vw;
 }
 
 .tab-vidget__text2 {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 1.667vh;
   font-weight: 500;
   margin-bottom: 7vh;
+  max-width: 13.802vw;
 }
 
 .tab-vidget__btn-group {
@@ -821,11 +827,12 @@ input:checked + .slider:before {
   border: none;
   color: #fff;
   padding: 16px 26px 16px 26px;
-  min-width: 370px;
+  min-width: 16.667vw;
   max-height: 68px;
   border-radius: 5px;
-  font-size: 24px;
+  font-size: 2.222vh;
   font-weight: 700;
+  margin-left: 1.042vw;
 }
 
 .tab-vidget__image {
@@ -833,6 +840,12 @@ input:checked + .slider:before {
   background: #fff;
   padding: 16px 25px;
   border-radius: 5px;
+  margin-left: 1.042vw;
+}
+
+.but_settings {
+  margin-left: 23px;
+  /*3 таб*/
 }
 
 .tab-vidget .tab-vidget-behavior {
